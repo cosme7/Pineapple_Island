@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+/** Playfair Display => Libre Baskerville */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/** Gotham => Raleway */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --spacer-mobile: 0 1rem;
+    /*  */
+    --ff-title: 'Libre Baskerville', serif;
+    --ff-body: 'Manrope', sans-serif;
+    --ff-card: 'Raleway', sans-serif;
+    --ff-others: 'Poppins', sans-serif;
+    /*  */
+    --wg-title: 700;
+    --wg-body: 400;
+    --wg-others: 300;
+    /*  */
+    --clr-white: #FFFFFF;
+    --clr-navyblue: #0E204E;
+    --clr-blue: #030033;
+    --clr-nav: #232323;
+    --clr-black: #263238;
+    /*  */
+    --bg-white: #FFFFFF;
+    --bg-navyblue: #0E204E;
+    /*  */
+}
+
+/** HEADER CONTAINER */
+.h--container{
+    max-width: 1920px;
+    margin: 0 auto;
+    background: var(--bg-white);
+}
+
+/** HEADER 1º BOX */
+.h--nav--box{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 2rem;
+    background: var(--bg-white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo__h1{
+    width: min(10ch, 80%);
+    font-size: clamp(1.25rem, 2.5vw, 2.5rem);
+    font-family: var(--ff-title);
+    font-weight: var(--wg-title);
+    color: var(--clr-navyblue);
+}
+
+.h__nav{
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.h__ul{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.h__ul a{
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-family: var(--ff-body);
+    font-weight: var(--wg-body);
+    color: var(--clr-nav);
+}
+
+.h__btn{
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    font-family: var(--ff-body);
+    font-weight: var(--wg-body);
+    padding: .7em 2em;
+    color: var(--clr-white);
+    background: var(--bg-navyblue);
+    cursor: pointer;
+    border: none;
+}
+
+/** HEADER 2º BOX */
+.h--img--box{
+    width: 100%;
+    margin: 0 auto;
+    background: var(--bg-white);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    clip-path: polygon(0 1%, 100% 0, 100% 60%, 100% 100%, 83.6% 83%, 20% 100%, 0 100%);
+    position: relative;
+}
+
+.h__txt{
+    width: 786px;
+    height: 496px;
+    padding: 3rem 1rem 0 4rem;
+    background: var(--bg-navyblue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    position: absolute;
+    left: 6rem;
+}
+
+.h__title{
+    width: min(65ch, 90%);
+    font-size: clamp(1.6rem, 3vw, 4rem);
+    font-family: var(--ff-title);
+    font-weight: var(--wg-title);
+    color: var(--clr-white);
+}
+
+.h__body{
+    font-size: clamp(.8rem, 1.1vw, 1.25rem);
+    font-family: var(--ff-body);
+    font-weight: var(--wg-body);
+    line-height: 30px;
+    color: var(--clr-white);
+}
+
+.h__img{
+    width: 80%;
+}
