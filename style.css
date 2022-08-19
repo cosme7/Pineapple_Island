@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 /** Gotham => Raleway */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 
 *{
     margin: 0;
@@ -20,6 +21,7 @@
     --ff-body: 'Manrope', sans-serif;
     --ff-card: 'Raleway', sans-serif;
     --ff-others: 'Poppins', sans-serif;
+    -ff-mobile: 'Lato', sans-serif; 
     /*  */
     --wg-title: 700;
     --wg-body: 400;
@@ -244,7 +246,7 @@
 /** MAIN 3º CONTAINER */
 .offers--container{
     max-width: 1920px;
-    margin: 0 auto;
+    margin: 0 auto 10%;
     background: var(--bg-white);
     display: flex;
     flex-direction: column;
@@ -333,3 +335,70 @@
 .service--mobile{
     display: none;
 }
+
+/** MAIN 4º CONTAINER */
+.galleries--container{
+    max-width: 1920px;
+    margin: 0 auto 10%;
+    background: var(--bg-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.galleries__title{
+    font-size: clamp(1.5rem, 3.15vw, 4rem);
+    font-family: var(--ff-title);
+    font-weight: var(--wg-title);
+    margin-bottom: 1%;
+    color: var(--clr-navyblue);
+    text-align: center;
+}
+
+.galleries__mobile{
+    display: none;
+}
+
+.galleries__body{
+    width: min(60ch, 90%);
+    font-size: clamp(1rem, 1.1vw, 1.5rem);
+    font-family: var(--ff-body);
+    font-weight: var(--wg-body);
+    line-height: 180%;
+    margin-bottom: 3%;
+    color: var(--clr-black);
+    text-align: center;
+}
+
+.galleries--grid{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2%;
+}
+
+/** MOBILE IMG CONFIG */
+.galleries--wrapper{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2%;
+    display: none;
+}
+
+.galleries--mobile{
+    margin-bottom: 4%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.galleries__img{
+    width: 100%;
+}
+
+.img__galleries{
+    grid-column: 1 / 2 span;
+}
+
+/** MAIN 5º CONTAINER */
