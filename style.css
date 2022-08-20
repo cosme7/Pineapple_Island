@@ -21,7 +21,7 @@
     --ff-body: 'Manrope', sans-serif;
     --ff-card: 'Raleway', sans-serif;
     --ff-others: 'Poppins', sans-serif;
-    -ff-mobile: 'Lato', sans-serif; 
+    --ff-mobile: 'Lato', sans-serif; 
     /*  */
     --wg-title: 700;
     --wg-body: 400;
@@ -87,10 +87,10 @@
 }
 
 .h__btn{
+    padding: .7em 2em;
     font-size: clamp(1rem, 1.5vw, 1.2rem);
     font-family: var(--ff-body);
     font-weight: var(--wg-body);
-    padding: .7em 2em;
     color: var(--clr-white);
     background: var(--bg-navyblue);
     cursor: pointer;
@@ -206,11 +206,11 @@
 
 .choose__title{
     width: min(15ch, 100%);
+    margin-top: 7%;
     font-size: clamp(1.6rem, 2.8vw, 3.5rem);
     font-family: var(--ff-title);
     font-weight: var(--wg-title);
     line-height: 150%;
-    margin-top: 7%;
     color: var(--clr-white);
     flex: .2;
 }
@@ -242,7 +242,6 @@
     width: 60%;
 }
 
-
 /** MAIN 3º CONTAINER */
 .offers--container{
     max-width: 1920px;
@@ -254,10 +253,10 @@
 }
 
 .offers__title{
+    margin-bottom: 5%;
     font-size: clamp(1.5rem, 3.15vw, 4rem);
     font-family: var(--ff-title);
     font-weight: var(--wg-title);
-    margin-bottom: 5%;
     color: var(--clr-navyblue);
     text-align: center;
 }
@@ -306,14 +305,14 @@
 
 .service__top{
     width: 30%;
-    justify-self: end;
     margin-right: 10%;
+    justify-self: end;
 }
 
 .service__bottom{
     width: 30%;
-    justify-self: start;
     margin-left: 17%;
+    justify-self: start;
 }
 
 .service__sub__top,
@@ -347,10 +346,10 @@
 }
 
 .galleries__title{
+    margin-bottom: 1%;
     font-size: clamp(1.5rem, 3.15vw, 4rem);
     font-family: var(--ff-title);
     font-weight: var(--wg-title);
-    margin-bottom: 1%;
     color: var(--clr-navyblue);
     text-align: center;
 }
@@ -361,11 +360,11 @@
 
 .galleries__body{
     width: min(60ch, 90%);
+    margin-bottom: 3%;
     font-size: clamp(1rem, 1.1vw, 1.5rem);
     font-family: var(--ff-body);
     font-weight: var(--wg-body);
     line-height: 180%;
-    margin-bottom: 3%;
     color: var(--clr-black);
     text-align: center;
 }
@@ -402,3 +401,121 @@
 }
 
 /** MAIN 5º CONTAINER */
+.features--container{
+    max-width: 1920px;
+    margin: 0 auto 10%;
+    background: var(--bg-white);
+}
+
+.features--grid{
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  
+    row-gap: 10rem;
+    position: relative;
+    z-index: 1;
+}
+
+.features__navy{
+    width: 100%;
+    height: 61%;
+    background: var(--bg-navyblue);
+    position: absolute;
+    top: 20%;
+    z-index: -1;
+}
+
+.features__top{
+    grid-area: 1 / 1 / 1 / 1;  
+}
+
+.features__bottom{
+    grid-area: 2 / 2; 
+    justify-self: end;
+}
+
+.features__img{
+    width: 75%;
+}
+
+.features__spc{
+    justify-self: end;
+}
+
+.features--txt{
+    align-self: center;
+}
+
+.features__title{
+    width: min(10ch, 100%);
+    margin-bottom: 4%;
+    font-size: clamp(1.5rem, 3.15vw, 4rem);
+    font-family: var(--ff-title);
+    font-weight: var(--wg-title);
+    line-height: 140%;
+    color: var(--clr-navyblue);
+}
+
+.features__body{
+    width: min(35ch, 90%);
+    margin-bottom: 8%;
+    font-size: clamp(1rem, 1.05vw, 1.5rem);
+    font-family: var(--ff-body);
+    font-weight: var(--wg-body);
+    line-height: 150%;
+    color: var(--clr-black);
+}
+
+.features_btn{
+    padding: .7em 4.3em;
+    font-size: clamp(1rem, 1.05vw, 1.5rem);
+    font-family: var(--ff-card);
+    font-weight: var(--wg-others);
+    color: var(--clr-white);
+    background: var(--bg-navyblue);
+    cursor: pointer;
+    border: none;
+}
+
+.features--box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.amazing__title{
+    margin: 0 8% 4% 0;
+    font-size: clamp(1.5rem, 2.9vw, 4rem);
+    font-family: var(--ff-title);
+    font-weight: var(--wg-title);
+    color: var(--clr-navyblue);
+}
+
+.amazing--flex{
+    width: 87%;
+    padding: 5% 0;
+    display: flex;
+    justify-content: space-between;
+    background: var(--bg-white);
+}
+
+.amazing--flex:nth-child(even){
+    padding: 1.5% 0;
+    background: rgba(14, 63, 51, 0.2);
+}
+
+.amazing__body{
+    margin-left: 5%;
+    font-size: clamp(1rem, 1.05vw, 1.5rem);
+    font-family: var(--ff-card);
+    font-weight: var(--wg-body);
+    line-height: 19px;
+    color: var(--clr-blue);
+}
+
+.amazing__check{
+    width: 4%;
+    margin-right: 5%;
+}
