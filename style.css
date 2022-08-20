@@ -519,3 +519,73 @@
     width: 4%;
     margin-right: 5%;
 }
+
+/** MAIN 6º CONTAINER */
+.touch--container{
+    max-width: 1920px;
+    margin: 0 auto 10%;
+    background: var(--bg-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.touch__title{
+    margin-bottom: 1.5%;
+    font-size: clamp(1.5rem, 3.15vw, 4rem);
+    font-family: var(--ff-title);
+    font-weight: var(--wg-title);
+    color: var(--clr-navyblue);
+}
+
+.touch__body{
+    margin-bottom: 2%;
+    font-size: clamp(1rem, 1.3vw, 1.2rem);
+    font-family: var(--ff-card);
+    font-weight: var(--wg-body);
+    color: black;
+    text-align: center;
+}
+
+.touch--form{
+    width: 45%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.touch__input,
+.touch__msg{
+    width: 100%;
+    height: clamp(3rem, 2.5vw, 65px);
+    font-size: clamp(1rem, 1.3vw, 1.2rem);
+    border: 1px solid #2D2B2B;
+    outline: none;
+}
+
+.touch__msg{
+    height: clamp(5.1rem, 16vw, 400px);
+}
+
+.touch__input::placeholder,
+.touch__msg::placeholder{
+    padding-left: 2%;
+    font-size: clamp(1rem, 1.3vw, 1.2rem);
+    font-family: var(--ff-body);
+    font-weight: var(--wg-body);
+}
+
+.touch__btn{
+    padding: .4em 2em;
+    font-size: clamp(1rem, .95vw, 1.2rem);
+    font-family: var(--ff-body);
+    font-weight: var(--wg-body);
+    color: var(--clr-white);
+    background: var(--bg-navyblue);
+    cursor: pointer;
+    border: none;
+}
+
+/** FOOTER */
