@@ -1,6 +1,6 @@
-<p>Design Made By: ???</p>
+<p>Design Made By: ??</p>
 
-<p>Link Perfil: ???</p>
+<p>Link Perfil: ??</p>
 
 <p>Landing Page Link:</p>
 
